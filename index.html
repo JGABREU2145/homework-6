@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .heading{
+        text-align: center;
+        background: rgb(17, 32, 32);
+        color: white;
+    }    
+    
+    .row.content {
+        height: 450px;
+    }    
+  
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    form.searchBtn input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+    }
+
+    form.searchBtn button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+    }
+
+    form.searchBtn button:hover {
+        background: #0b7dda;
+    }
+
+    form.searchBtn::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    li{
+        text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row heading">
+      <h1>Weather Dashboard</h1>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <form class="searchBtn" action="/action_page.php">
+                <label for="search">Search for a City:</label>
+                <input type="text" placeholder="Search..." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <ul class="list-group">
+                <li class="list-group-item">Austin</li>
+                <li class="list-group-item">Chicago</li>
+                <li class="list-group-item">New York</li>
+                <li class="list-group-item">Orlando</li>
+                <li class="list-group-item">San Francisco</li>
+                <li class="list-group-item">Seattle</li>
+                <li class="list-group-item">Denver</li>
+                <li class="list-group-item">Atlanta</li>
+            </ul>
+
+        </div>
+
+        <div class="col-sm-8 text-left"> 
+            <h1 id="cityTime">This will be the city</h1>
+            <p id="temp">Temp</p>
+            <p id="humid">Humidity</p>
+            <p id="windSpeed">Wind Speed</p>
+            <p id="uv">Some number</p>
+
+           
+            
+            
+            <hr>
+            <h3>5-Day Forecast</h3>
+            <p>Lorem ipsum...</p>
+        </div>    
+    </div>
+</div>
+
+
+
+</body>
+</html>
