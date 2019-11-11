@@ -16,7 +16,7 @@
     }    
     
     .row.content {
-        height: 450px;
+        height: 480px;
     }    
   
     .sidenav {
@@ -63,7 +63,22 @@
         display: table;
     }
     li{
+        color: black;
         text-align: left;
+    }
+    .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+    }
+
+    .block:hover {
+    background-color: #ddd;
+    color: black;
     }
   </style>
 </head>
@@ -75,7 +90,7 @@
   </div>
 </nav>
   
-<div class="container-fluid text-center">    
+<div class="container-fluid">    
     <div class="row content">
         <div class="col-sm-2 sidenav">
             <form class="searchBtn" action="/action_page.php">
@@ -83,16 +98,16 @@
                 <input type="text" placeholder="Search..." name="search2">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-
+            <br>
             <ul class="list-group">
-                <li class="list-group-item">Austin</li>
-                <li class="list-group-item">Chicago</li>
-                <li class="list-group-item">New York</li>
-                <li class="list-group-item">Orlando</li>
-                <li class="list-group-item">San Francisco</li>
-                <li class="list-group-item">Seattle</li>
-                <li class="list-group-item">Denver</li>
-                <li class="list-group-item">Atlanta</li>
+                <li class="list-group-item"><button class="block">Austin</button></li>
+                <li class="list-group-item"><button class="block">Chicago</button></li>
+                <li class="list-group-item"><button class="block">New York</button></li>
+                <li class="list-group-item"><button class="block">Orlando</button></li>
+                <li class="list-group-item"><button class="block">San Francisco</button></li>
+                <li class="list-group-item"><button class="block">Seattle</button></li>
+                <li class="list-group-item"><button class="block">Denver</button></li>
+                <li class="list-group-item"><button class="block">Atlanta</button></li>
             </ul>
 
         </div>
