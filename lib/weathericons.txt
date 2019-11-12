@@ -1,0 +1,5 @@
+Rain: <i class="fas fa-cloud-rain"></i>
+Sun: <i class="fas fa-sun"></i>
+Chance of Rain: <i class="fas fa-cloud-sun-rain"></i>
+Cloudy: <i class="fas fa-cloud"></i>
+Lightning: <i class="fas fa-bolt"></i>

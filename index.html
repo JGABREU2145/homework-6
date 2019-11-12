@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/95e57d5300.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
@@ -14,10 +15,18 @@
         background: rgb(17, 32, 32);
         color: white;
     }    
+
+    .container{
+        height: 500px;
+    }
     
     .row.content {
-        height: 480px;
+        height: 500px;
+        width: 100%;
     }    
+    .main{
+        height: 500px;
+    }
   
     .sidenav {
       padding-top: 20px;
@@ -39,6 +48,7 @@
         float: left;
         width: 80%;
         background: #f1f1f1;
+        border-radius: 5px;
     }
 
     form.searchBtn button {
@@ -51,6 +61,7 @@
         border: 1px solid grey;
         border-left: none;
         cursor: pointer;
+        border-radius: 5px;
     }
 
     form.searchBtn button:hover {
@@ -79,6 +90,26 @@
     .block:hover {
     background-color: #ddd;
     color: black;
+    }
+
+    .weatherBox{
+        background: rgb(73, 104, 243);
+        height: 200px;
+        width: 150px;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .uv{
+        background: rgb(197, 42, 42);
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        height: 30px;
+        width: 50px;
+        padding: 5px;
     }
   </style>
 </head>
@@ -112,19 +143,70 @@
 
         </div>
 
-        <div class="col-sm-8 text-left"> 
+        <div class="col-sm-8"> 
             <h1 id="cityTime">This will be the city</h1>
             <p id="temp">Temp</p>
             <p id="humid">Humidity</p>
             <p id="windSpeed">Wind Speed</p>
-            <p id="uv">Some number</p>
+            <p id="uv">UV Index: <span class="uv">1.56</span> </p>
 
            
             
             
             <hr>
             <h3>5-Day Forecast</h3>
-            <p>Lorem ipsum...</p>
+            <div class="row">
+                    <div class="col-sm-2"><div class="weatherBox">
+                            <h4 id="weatherDate">Date</h4>  
+                            <br>              
+                            <i class="fas fa-sun"></i>
+                            <br>
+                            <br>
+                            <p id="weatherTemp">Temp</p>
+                            <br>
+                            <p id="weatherHumid">Humidity</p>
+                        </div></div>
+                    <div class="col-sm-2"><div class="weatherBox">
+                            <h4 id="weatherDate">Date</h4>  
+                            <br>              
+                            <i class="fas fa-sun"></i>
+                            <br>
+                            <br>
+                            <p id="weatherTemp">Temp</p>
+                            <br>
+                            <p id="weatherHumid">Humidity</p>
+                        </div></div>
+                    <div class="col-sm-2"><div class="weatherBox">
+                            <h4 id="weatherDate">Date</h4>  
+                            <br>              
+                            <i class="fas fa-sun"></i>
+                            <br>
+                            <br>
+                            <p id="weatherTemp">Temp</p>
+                            <br>
+                            <p id="weatherHumid">Humidity</p>
+                        </div></div>
+                        <div class="col-sm-2"><div class="weatherBox">
+                            <h4 id="weatherDate">Date</h4>  
+                            <br>              
+                            <i class="fas fa-sun"></i>
+                            <br>
+                            <br>
+                            <p id="weatherTemp">Temp</p>
+                            <br>
+                            <p id="weatherHumid">Humidity</p>
+                        </div></div>
+                    <div class="col-sm-2"><div class="weatherBox">
+                            <h4 id="weatherDate">Date</h4>  
+                            <br>              
+                            <i class="fas fa-sun"></i>
+                            <br>
+                            <br>
+                            <p id="weatherTemp">Temp</p>
+                            <br>
+                            <p id="weatherHumid">Humidity</p>
+                        </div></div>
+                  </div>           
         </div>    
     </div>
 </div>
