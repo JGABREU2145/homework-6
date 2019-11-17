@@ -3,3 +3,37 @@ Sun: <i class="fas fa-sun"></i>
 Chance of Rain: <i class="fas fa-cloud-sun-rain"></i>
 Cloudy: <i class="fas fa-cloud"></i>
 Lightning: <i class="fas fa-bolt"></i>
+
+<h3>5-Day Forecast</h3>
+                    <div class="weatherBox">
+                        <h4 id="weatherDate">Date</h4>  
+                        <br>              
+                        <i class="fas fa-sun"></i>
+                        <br>
+                        <br>
+                        <p id="weatherTemp">Temp</p>
+                        <br>
+                        <p id="weatherHumid">Humidity</p>
+                    </div>
+
+                    <div class="weatherBox">
+                        <h4 id="weatherDate">Date</h4>  
+                        <br>              
+                        <i class="fas fa-sun"></i>
+                        <br>
+                        <br>
+                        <p id="weatherTemp">Temp</p>
+                        <br>
+                        <p id="weatherHumid">Humidity</p>  
+                    </div>
+
+                    <div class="weatherBox">
+                        <h4 id="weatherDate">Date</h4>  
+                        <br>              
+                        <i class="fas fa-sun"></i>
+                        <br>
+                        <br>
+                        <p id="weatherTemp">Temp</p>
+                        <br>
+                        <p id="weatherHumid">Humidity</p>  
+                    </div>            

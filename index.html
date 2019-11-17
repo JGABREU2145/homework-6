@@ -5,10 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/95e57d5300.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
   <style>
     .heading{
         text-align: center;
@@ -73,7 +70,7 @@
         clear: both;
         display: table;
     }
-    li{
+    li {
         color: black;
         text-align: left;
     }
@@ -92,17 +89,17 @@
     color: black;
     }
 
-    .weatherBox{
+    .weatherBox {
         background: rgb(73, 104, 243);
         height: 200px;
-        width: 150px;
+        width: 130px;
         color: white;
         border-radius: 5px;
         padding: 10px;
         margin: 20px;
     }
 
-    .uv{
+    .uv {
         background: rgb(197, 42, 42);
         color: white;
         text-align: center;
@@ -126,32 +123,32 @@
         <div class="col-sm-2 sidenav">
             <form class="searchBtn" action="/action_page.php">
                 <label for="search">Search for a City:</label>
-                <input type="text" placeholder="Search..." name="search2">
+                <input type="text" placeholder="Search..." name="search2" id="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
             <br>
             <ul class="list-group">
-                <li class="list-group-item"><button class="block">Austin</button></li>
-                <li class="list-group-item"><button class="block">Chicago</button></li>
-                <li class="list-group-item"><button class="block">New York</button></li>
-                <li class="list-group-item"><button class="block">Orlando</button></li>
-                <li class="list-group-item"><button class="block">San Francisco</button></li>
-                <li class="list-group-item"><button class="block">Seattle</button></li>
-                <li class="list-group-item"><button class="block">Denver</button></li>
-                <li class="list-group-item"><button class="block">Atlanta</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">Austin</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">Chicago</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">New York</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">Orlando</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">San Francisco</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">Seattle</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">Denver</button></li>
+                <li class="list-group-item"><button class="block" id="cityWeather">Atlanta</button></li>
             </ul>
 
         </div>
 
         <div class="col-sm-8"> 
-            <h1 id="cityTime">This will be the city</h1>
-            <p id="temp">Temp</p>
-            <p id="humid">Humidity</p>
-            <p id="windSpeed">Wind Speed</p>
-            <p id="uv">UV Index: <span class="uv">1.56</span> </p>
+            <h1 id="city"></h1>
+            <p id="temp"></p>
+            <p id="humid"></p>
+            <p id="wind"></p>
+            <p>UV Index:<span class="uv" id="uv"></span> </p>
             
             <hr>
-            
+
             <h3>5-Day Forecast</h3>
             <div class="row">
                 <div class="col-sm-2">
@@ -219,7 +216,10 @@
     </div>
 </div>
 
-
+<script src="https://kit.fontawesome.com/95e57d5300.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type = "text/javascript" src="script.js"></script>
 
 </body>
 </html>
