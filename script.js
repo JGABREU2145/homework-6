@@ -14,10 +14,10 @@ $.ajax({
     console.log(response);
 
     // Transfer content to HTML
-    $("#city").html("<h1>" + response.name + " Weather Details</h1>");
+    $("#city").html("<h1>" + response.name + "</h1>");
     $("#temp").text("Temperature (F) " + response.main.temp);
-    $("#humid").text("Humidity: " + response.main.humidity);
-    $("#wind").text("Wind Speed: " + response.wind.speed);
+    $("#humid").text("Humidity: " + response.main.humidity + "%");
+    $("#wind").text("Wind Speed: " + response.wind.speed + " " + "mph");
 
     //Call for UV index
     var lat = response.coord.lat;
@@ -35,10 +35,6 @@ $.ajax({
 
       });    
 
-    // Log the data in the console as well
-    console.log("Wind Speed: " + response.wind.speed);
-    console.log("Humidity: " + response.main.humidity);
-    console.log("Temperature (F): " + response.main.temp);
     console.log("UV INdex " + uvResponse);
     
   });
@@ -46,8 +42,9 @@ $.ajax({
 // function for displaying data when city on navbar is clicked
 
 $("#cityWeather").on("click", function(){
-    
-var cityWeather = $("#cityWeather").val();
+    event.preventDefault();
+
+var cityWeather = $("#cityWeather").val().trim();
 var cityURL = "https://api.openweathermap.org/data/2.5/weather?" + "q=" + cityWeather + ",US&units=imperial&appid=" + APIKey;
 
 $.ajax({
@@ -58,9 +55,9 @@ $.ajax({
 
     console.log(response);
 
-    $("#city").html("<h1>" + response.name + " Weather Details</h1>").append();
-    $("#temp").text("Temperature (F) " + response.main.temp).append();
-    $("#humid").text("Humidity: " + response.main.humidity);
+    $("#city").html("<h1>" + response.name + " Weather Details</h1>");
+    $("#temp").text("Temperature (F) " + response.main.temp);
+    $("#humid").text("Humidity: " + response.main.humidity + "%");
     $("#wind").text("Wind Speed: " + response.wind.speed);
 
     //Call for UV index
@@ -83,6 +80,7 @@ $.ajax({
 
   })
   
+ 
   
 
 
